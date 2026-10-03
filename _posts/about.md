@@ -1,6 +1,6 @@
-layout: pagetitle: "من أنا"permalink: /about/
+
 Majek7x
-penetrtion testing  وحاليا بشيفت للسوك  بحب التعلم والمشاركة المعرفة.
+  بpenetrtion testing بحب التعلم والمشاركة المعرفة وحاليا بشيفت للسوك  
 
 اهتماماتي:
 الأمن السيبراني
