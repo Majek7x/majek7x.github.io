@@ -1,10 +1,10 @@
-title: مدونة majek7x
+title: Blog majek7x
 description: شروحات ومقالات في عالم الأمن السيبراني
-author: مجك
+author: Hassan 
 url: "https://majek7x.github.io"
 baseurl: ""
 
-theme: minima
+theme: hack
 
 lang: ar
 dir: rtl
