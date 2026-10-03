@@ -2,7 +2,7 @@ title: Blog majek7x
 description: شروحات ومقالات في عالم الأمن السيبراني
 author: Hassan 
 url: "https://majek7x.github.io"
-baseurl: ""
+baseurl: " "
 
 theme:minima
 
