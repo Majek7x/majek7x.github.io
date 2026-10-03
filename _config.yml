@@ -4,7 +4,7 @@ author: Hassan
 url: "https://majek7x.github.io"
 baseurl: ""
 future: true
-theme: minima
+theme: midnight
 
 lang: ar
 dir: rtl
