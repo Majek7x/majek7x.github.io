@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hassan Ashraf Abu-Algood — Web Penetration Tester &amp; Bug Bounty Hunter</title>
+<meta name="description" content="Portfolio of Hassan Ashraf Abu-Algood — web application penetration tester and active bug bounty hunter on HackerOne. Structured OWASP Top 10 methodology, eJPT v1 & v2, CompTIA Security+, HCIA-Security & HCIA-Cloud, and security training delivered to 200+ students." />
+<meta property="og:title" content="Hassan Ashraf Abu-Algood — Web Penetration Tester & Bug Bounty Hunter" />
+<meta property="og:description" content="Active bug bounty hunter on HackerOne. Structured, OWASP Top 10-aligned pentest methodology — scoping, recon, testing, reporting." />
+<meta property="og:type" content="website" />
+<meta name="theme-color" content="#0B0F14" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230B0F14'/%3E%3Crect x='9' y='7' width='6' height='18' fill='%234ADE80'/%3E%3Crect x='19' y='7' width='4' height='18' fill='%231E2833'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: "#0B0F14", panel: "#10151C", line: "#1E2833",
+          txt: "#E7EEF5", mut: "#93A1B1", acc: "#4ADE80",
+        },
+        fontFamily: {
+          disp: ["'Space Grotesk'", "sans-serif"],
+          body: ["'IBM Plex Sans'", "sans-serif"],
+          mono: ["'JetBrains Mono'", "monospace"],
+        },
+      },
+    },
+  };
+</script>
+
+<style>
+  html { scroll-behavior: smooth; scroll-padding-top: 5.5rem; }
+  ::selection { background: #4ADE80; color: #0B0F14; }
+  :focus-visible { outline: 2px solid #4ADE80; outline-offset: 2px; border-radius: 4px; }
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s cubic-bezier(.22,.61,.36,1); }
+  .reveal.is-in { opacity: 1; transform: translateY(0); }
+  .cursor { display: inline-block; width: 8px; height: 1.05em; background: #4ADE80; margin-left: 3px; vertical-align: -2px; animation: blink 1.1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+  .grid-bg {
+    background-image: radial-gradient(rgba(74,222,128,.10) 1px, transparent 1.4px);
+    background-size: 28px 28px;
+    -webkit-mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, #000 25%, transparent 78%);
+    mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, #000 25%, transparent 78%);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reveal { opacity: 1; transform: none; transition: none; }
+    *, ::before, ::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Hassan Ashraf Abu-Algood",
+  "jobTitle": "Web Penetration Tester & Bug Bounty Hunter",
+  "email": "mailto:hassanashrafaboelgood@gmail.com",
+  "telephone": "+20 111 773 5954",
+  "address": { "@type": "PostalAddress", "addressLocality": "Cairo", "addressCountry": "EG" },
+  "sameAs": ["https://www.linkedin.com/in/hassan-ashraf-abu-algood"],
+  "knowsAbout": ["Web Application Penetration Testing", "OWASP Top 10", "Bug Bounty", "HackerOne", "Networking", "Security Training", "Python", "n8n"]
+}
+</script>
+
+<script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7.24.7/babel.min.js"></script>
+</head>
+
+<body class="bg-ink text-txt font-body antialiased">
+
+<div id="root">
+  <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;font-family:monospace;color:#93A1B1">loading portfolio…</div>
+</div>
+
+<noscript>
+  <div style="max-width:40rem;margin:4rem auto;padding:0 1.5rem;font-family:sans-serif;color:#E7EEF5;background:#0B0F14">
+    <h1 style="font-size:1.5rem">Hassan Ashraf Abu-Algood — Web Penetration Tester &amp; Bug Bounty Hunter</h1>
+    <p style="margin-top:1rem">Cairo, Egypt ·
+      <a style="color:#4ADE80" href="mailto:hassanashrafaboelgood@gmail.com">hassanashrafaboelgood@gmail.com</a> ·
+      <a style="color:#4ADE80" href="https://www.linkedin.com/in/hassan-ashraf-abu-algood">LinkedIn</a></p>
+    <p style="margin-top:.5rem;color:#93A1B1">Please enable JavaScript to view the full portfolio.</p>
+  </div>
+</noscript>
+
+<script type="text/babel" data-presets="react">
+const { useState, useEffect, useRef } = React;
+
+/* =====================================================================
+   1) DATA — كل المحتوى هنا. عدّل من غير ما تلمس أي component تحت.
+   ===================================================================== */
+
+const PROFILE = {
+  name: "Hassan Ashraf Abu-Algood",
+  role: "Web Penetration Tester & Bug Bounty Hunter",
+  location: "Cairo, Egypt",
+  email: "hassanashrafaboelgood@gmail.com",
+  phone: "+20 111 773 5954",
+  phoneHref: "tel:+201117735954",
+  linkedin: "https://www.linkedin.com/in/hassan-ashraf-abu-algood",
+  // TODO (مهم): حط لينك GitHub بتاعك هنا — لو سِبته فاضي، الكارت هيظهر "Link coming soon"
+  github: "https://github.com",
+};
+
+/* لو عايز الرسائل توصلك من غير تطبيق الإيميل:
+   اعمل endpoint مجاني (Formspree / Web3Forms) وحط اللينك هنا.
+   لحد ما تحطه، الفورم هيفتح إيميل الزائر جاهز ومعبّي. */
+const FORM_ENDPOINT = "https://formspree.io/f/xppqrrvj";
+
+const PROOF_CHIPS = [
+  { icon: "bug",    text: "Active on HackerOne" },
+  { icon: "award",  text: "eJPT v1 & v2" },
+  { icon: "shield", text: "CompTIA Security+" },
+  { icon: "lock",   text: "HCIA-Security & HCIA-Cloud" },
+  { icon: "users",  text: "200+ students trained" },
+  { icon: "trophy", text: "2nd Place — Black Hat CTF" },
+  { icon: "flag",   text: "Top-15 national — EG-CERT CTF" },
+];
+
+/* التيرمينال في الـ Hero — بيشرح المنهجية في 4 مراحل */
+const TERMINAL_SCRIPT = [
+  { cls: "cmd", text: "hassan@sec:~$ cat methodology.txt" },
+  { cls: "out", text: "[1/4] SCOPE   -> define targets & rules" },
+  { cls: "out", text: "[2/4] RECON   -> map the attack surface" },
+  { cls: "out", text: "[3/4] TEST    -> probe the OWASP Top 10" },
+  { cls: "out", text: "[4/4] REPORT  -> document impact & fix" },
+  { cls: "cmd", text: "hassan@sec:~$ whoami" },
+  { cls: "ok",  text: "web-pentester --bug-bounty hackerone --active" },
+  { cls: "cmd", text: "hassan@sec:~$" },
+];
+
+const ABOUT = [
+  "I'm a cybersecurity professional focused on web application penetration testing, following a structured, OWASP Top 10-aligned methodology — from scoping and reconnaissance to testing and reporting. I hunt bugs actively on HackerOne, where scoping discipline, recon, and clear vulnerability reporting are part of my routine.",
+  "Before security, I built things: I'm a freelance developer (JavaScript, Flutter/Dart, HTML/CSS) with a B.Sc. in Educational Technology and Information from Helwan University. Understanding how applications are built makes me better at assessing how they break — and my networking foundation (CCNA-aligned) helps me see the full picture behind every target.",
+  "I teach what I practice: at NTI I delivered structured cybersecurity training to 200+ university students, plus a dedicated web pentest track for 80 students — guiding hands-on labs with Burp Suite, SQLMap, and OWASP ZAP. I keep learning through respected programs and books (SANS SEC401, Bug Bounty Bootcamp), and I work with Python, AI agents, and n8n workflow automation.",
+];
+
+const FOCUS = [
+  { icon: "crosshair", title: "Web Application Penetration Testing", sub: "Structured, OWASP Top 10-aligned methodology" },
+  { icon: "bug",       title: "Bug Bounty Hunting",                 sub: "Active on HackerOne — scoping, recon, reporting" },
+  { icon: "code",      title: "Building & Scripting",               sub: "JavaScript, Flutter/Dart, Python, Bash — plus AI agents & n8n" },
+  { icon: "users",     title: "Security Training",                  sub: "200+ students trained, plus an 80-student pentest track" },
+  { icon: "network",   title: "Networking Foundation",              sub: "CCNA-aligned fundamentals under everything I do" },
+];
+
+/* TODO (مهم): السيرة بتقول إن خبرة التدريس في NTI كانت 2026 — راجع التاريخ قبل النشر
+   وغيّر قيم period هنا لو التاريخ الصحيح 2025. */
+const EXPERIENCE = [
+  {
+    role: "Security Intern", org: "Decodelabs", period: "2025 — Present",
+    points: [
+      "Perform web application security assessments and vulnerability analysis on live targets",
+      "Apply penetration testing methodologies aligned with OWASP standards",
+      "Gain hands-on exposure to enterprise security tools and incident response workflows",
+    ],
+    tags: ["Web Security", "OWASP", "Vulnerability Analysis"],
+  },
+  {
+    role: "Cybersecurity Instructor — Penetration Testing Track", org: "NTI", period: "Aug — Sep 2026",
+    points: [
+      "Delivered a web penetration testing track to 80 university students across two groups",
+      "Taught OWASP Top 10 vulnerability assessment methodology and cloud security fundamentals",
+      "Covered phishing & social engineering, log and event analysis, and Linux fundamentals",
+      "Guided hands-on labs with Burp Suite, SQLMap, and OWASP ZAP; supervised PortSwigger Academy labs, vulnerability write-ups, and capstone projects",
+    ],
+    tags: ["80 students", "Burp Suite", "SQLMap", "OWASP ZAP"],
+  },
+  {
+    role: "Cybersecurity Instructor", org: "NTI × Fortinet", period: "Jul — Aug 2026",
+    points: [
+      "Delivered structured cybersecurity training to 200+ university-level students across multiple sessions",
+      "Designed curriculum covering CCNA-aligned networking fundamentals, core cybersecurity concepts, and social engineering awareness",
+      "Led hands-on practical labs, translating theoretical security concepts into applied exercises",
+    ],
+    tags: ["200+ students", "CCNA-aligned", "Linux"],
+  },
+  {
+    role: "Freelance Developer & Security", org: "Freelance", period: "Freelance",
+    points: [
+      "Built and secured web projects with JavaScript, Flutter/Dart, HTML, and CSS",
+      "Applied a builder's perspective to security — understanding how apps are made informs how they break",
+    ],
+    tags: ["JavaScript", "Flutter / Dart", "HTML / CSS"],
+  },
+  {
+    role: "Bug Bounty Hunter", org: "HackerOne", period: "Active",
+    points: [
+      "Actively hunting on HackerOne with a disciplined workflow: scoping, reconnaissance, testing, and vulnerability reporting",
+    ],
+    tags: ["Scoping", "Reconnaissance", "Reporting"],
+  },
+];
+
+const SKILLS = [
+  { icon: "crosshair", title: "Web Application Penetration Testing",
+    desc: "Structured, OWASP Top 10-aligned methodology — from scoping to reporting.",
+    tags: ["Scoping", "Reconnaissance", "Vulnerability Assessment", "Reporting"] },
+  { icon: "bug", title: "Bug Bounty",
+    desc: "Active hunting on HackerOne — disciplined scoping, recon, and clear vulnerability reports.",
+    tags: ["HackerOne", "Scoping", "Recon", "Reporting"] },
+  { icon: "code", title: "Programming",
+    desc: "Building and scripting — from web front-ends to security automation.",
+    tags: ["Python", "JavaScript", "Bash", "C++", "Dart / Flutter", "HTML", "CSS"] },
+  { icon: "bot", title: "AI & Automation",
+    desc: "Working with AI agents and n8n for security workflow automation.",
+    tags: ["AI Agents", "n8n"] },
+  { icon: "network", title: "Networking",
+    desc: "CCNA-aligned fundamentals — the layer under every target.",
+    tags: ["CCNA-aligned", "Network Security"] },
+  { icon: "cloud", title: "Cloud Fundamentals",
+    desc: "Huawei HCIA-Cloud certified.",
+    tags: ["Cloud Concepts", "HCIA-Cloud"] },
+  { icon: "terminal", title: "Operating Systems",
+    desc: "Daily driving Linux for security work.",
+    tags: ["Kali Linux", "Ubuntu", "Windows", "WSL"] },
+];
+
+const TOOL_GROUPS = [
+  { icon: "search",    group: "Recon & Scanning",       items: ["Nmap", "Nessus", "SecLists"] },
+  { icon: "crosshair", group: "Web Proxies & Fuzzing",  items: ["Burp Suite", "OWASP ZAP", "Feroxbuster", "FFuf", "Gobuster"] },
+  { icon: "zap",       group: "Exploitation & Brute Force", items: ["Metasploit", "Hydra", "Netcat"] },
+  { icon: "activity",  group: "Traffic Analysis",       items: ["Wireshark"] },
+];
+
+const TIMELINE = [
+  { icon: "graduationCap", title: "Education", sub: "B.Sc. Educational Technology & Information — Helwan University (2025)",
+    desc: "Instructional design, information systems, and technology-enhanced learning." },
+  { icon: "network", title: "Networking Foundation", sub: "CCNA · ITI · NetRiders",
+    desc: "CCNA Networking Fundamentals, Security & Networking (ITI), and Network Security Fundamentals (NetRiders)." },
+  { icon: "shield", title: "Cybersecurity Core", sub: "Security+ · Mahara Tech · NTI",
+    desc: "CompTIA Security+ (SY0-701), Cybersecurity (Mahara Tech), and the NTI Cybersecurity Superhero Academy." },
+  { icon: "crosshair", title: "Penetration Testing Specialization", sub: "eJPT v1 & v2 · HackViser CORE",
+    desc: "Junior Penetration Tester certification (INE / NetRaiders) and HackViser CORE certification." },
+  { icon: "cloud", title: "Cloud & Security Certifications", sub: "HCIA-Security · HCIA-Cloud — Huawei",
+    desc: "Completed both Huawei HCIA-Security and HCIA-Cloud certifications." },
+  { icon: "bookOpen", title: "Deep Self-Study", sub: "SANS SEC401 · Bug Bounty Bootcamp",
+    desc: "Security Essentials (SANS SEC401) and Bug Bounty Bootcamp (Vickie Li), among other security books." },
+  { icon: "code", title: "Freelance Developer & Security", sub: "JavaScript · Flutter/Dart · Web",
+    desc: "Freelance web development and security work." },
+  { icon: "bug", title: "Hands-on Labs & Bug Bounty", sub: "HackerOne — active",
+    desc: "Active bug bounty hunting on HackerOne: scoping, recon, and vulnerability reporting. Hands-on lab write-ups coming soon." },
+  { icon: "briefcase", title: "Professional Experience", sub: "Decodelabs · NTI",
+    desc: "Security intern applying OWASP-aligned assessments, and instructor for 200+ students plus an 80-student pentest track." },
+];
+
+/* =====================================================================
+   LABS — زوّد اللابات من هنا. كل لاب = object واحد:
+   { title, description, tags: [...], link: "https://github.com/..." }
+   امسح الـ placeholders وحط بياناتك. link=null يعني "Coming soon".
+   ===================================================================== */
+const LABS = [
+  { /* PLACEHOLDER — replace with real lab */
+    title: "Lab write-up slot 1",
+    description: "Placeholder slot — replace with a real lab write-up: title, one or two lines about what you tested, tools used, and a link to your GitHub repo or PDF.",
+    tags: ["Your tools here"], link: null },
+  { /* PLACEHOLDER — replace with real lab */
+    title: "Lab write-up slot 2",
+    description: "Placeholder slot — same structure: title, short description, tool tags, and a link.",
+    tags: ["Your tools here"], link: null },
+  { /* PLACEHOLDER — replace with real lab */
+    title: "Lab write-up slot 3",
+    description: "Placeholder slot — add as many lab objects as you want; the grid grows automatically.",
+    tags: ["Your tools here"], link: null },
+];
+
+const CERTS_FEATURED = [
+  { icon: "crosshair", title: "eJPT v1 & v2", issuer: "INE / NetRaiders — Junior Penetration Tester" },
+  { icon: "shield",    title: "CompTIA Security+ (SY0-701)", issuer: "CompTIA" },
+  { icon: "lock",      title: "HCIA-Security", issuer: "Huawei" },
+  { icon: "cloud",     title: "HCIA-Cloud", issuer: "Huawei" },
+];
+
+const CERTS_MORE = [
+  "HackViser CORE Certification — HackViser",
+  "CCNA Networking Fundamentals",
+  "Security & Networking — Information Technology Institute (ITI)",
+  "Cybersecurity — Mahara Tech",
+  "Cybersecurity Superhero Academy — NTI",
+  "Network Security Fundamentals — NetRiders",
+];
+
+const ACHIEVEMENTS = [
+  { icon: "trophy", title: "Black Hat CTF", team: 'Team "Majek7x"', result: "2nd Place",
+    desc: "Podium finish in the Black Hat CTF competition." },
+  { icon: "flag", title: "EG-CERT CTF", team: 'Team "xmanga"', result: "4th qualifier · 14th national",
+    desc: "Ranked 4th in the qualifying round and 14th nationally in the final round." },
+];
+
+/* TODO: زوّد كتب تانية هنا بنفس الشكل */
+const LIBRARY = [
+  { title: "SANS SEC401: Security Essentials", desc: "A structured, deep foundation in security essentials — offense and defense." },
+  { title: "Bug Bounty Bootcamp — Vickie Li", desc: "End-to-end bug bounty methodology, from recon to reporting." },
+];
+
+const NAV_LINKS = [
+  { id: "about", label: "About" },
+  { id: "experience", label: "Experience" },
+  { id: "skills", label: "Skills" },
+  { id: "journey", label: "Journey" },
+  { id: "labs", label: "Labs" },
+  { id: "credentials", label: "Credentials" },
+  { id: "contact", label: "Contact" },
+];
+
+/* =====================================================================
+   2) ICONS — Lucide (inlined as SVG paths for zero-dependency speed)
+   ===================================================================== */
+const ICON_PATHS = {
+  shield: <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />,
+  terminal: <><polyline points="4 17 10 11 4 5" /><line x1="12" x2="20" y1="19" y2="19" /></>,
+  mail: <><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></>,
+  github: <><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" /><path d="M9 18c-4.51 2-5-2-7-2" /></>,
+  linkedin: <><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect width="4" height="12" x="2" y="9" /><circle cx="4" cy="4" r="2" /></>,
+  phone: <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />,
+  mapPin: <><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></>,
+  menu: <><line x1="4" x2="20" y1="12" y2="12" /><line x1="4" x2="20" y1="6" y2="6" /><line x1="4" x2="20" y1="18" y2="18" /></>,
+  x: <><path d="M18 6 6 18" /><path d="m6 6 12 12" /></>,
+  externalLink: <><path d="M15 3h6v6" /><path d="M10 14 21 3" /><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /></>,
+  award: <><circle cx="12" cy="8" r="6" /><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" /></>,
+  trophy: <><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" /><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" /><path d="M4 22h16" /><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" /><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" /><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" /></>,
+  flag: <><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" /><line x1="4" x2="4" y1="22" y2="15" /></>,
+  bookOpen: <><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></>,
+  code: <><polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" /></>,
+  bug: <><path d="m8 2 1.88 1.88" /><path d="M14.12 3.88 16 2" /><path d="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1" /><path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6" /><path d="M12 20v-9" /><path d="M6.53 9C4.6 8.8 3 7.1 3 5" /><path d="M6 13H2" /><path d="M3 21c0-2.1 1.7-3.9 3.8-4" /><path d="M20.97 5c0 2.1-1.6 3.8-3.5 4" /><path d="M22 13h-4" /><path d="M17.2 17c2.1.1 3.8 1.9 3.8 4" /></>,
+  search: <><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></>,
+  crosshair: <><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></>,
+  graduationCap: <><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /><path d="M22 10v6" /><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></>,
+  briefcase: <><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /><rect width="20" height="14" x="2" y="6" rx="2" /></>,
+  cloud: <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />,
+  network: <><rect x="16" y="16" width="6" height="6" rx="1" /><rect x="2" y="16" width="6" height="6" rx="1" /><rect x="9" y="2" width="6" height="6" rx="1" /><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3" /><path d="M12 12V8" /></>,
+  users: <><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></>,
+  bot: <><path d="M12 8V4H8" /><rect width="16" height="12" x="4" y="8" rx="2" /><path d="M2 14h2" /><path d="M20 14h2" /><path d="M15 13v2" /><path d="M9 13v2" /></>,
+  lock: <><rect width="18" height="11" x="3" y="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" /></>,
+  check: <path d="M20 6 9 17l-5-5" />,
+  send: <><path d="m22 2-7 20-4-9-9-4Z" /><path d="M22 2 11 13" /></>,
+  fileText: <><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" /><path d="M14 2v4a2 2 0 0 0 2 2h4" /><path d="M10 9H8" /><path d="M16 13H8" /><path d="M16 17H8" /></>,
+  activity: <path d="M22 12h-4l-3 9L9 3l-3 9H2" />,
+  zap: <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" />,
+  arrowRight: <><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></>,
+  arrowUp: <><path d="m5 12 7-7 7 7" /><path d="M12 19V5" /></>,
+};
+
+function Icon({ name, size = 18, className = "", strokeWidth = 2 }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24"
+      fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round"
+      strokeLinejoin="round" className={className} aria-hidden="true" focusable="false">
+      {ICON_PATHS[name] || null}
+    </svg>
+  );
+}
+
+/* =====================================================================
+   3) PRIMITIVES — Reveal (scroll animation) + Section header + hooks
+   ===================================================================== */
+function Reveal({ children, delay = 0, className = "", as: Tag = "div" }) {
+  const ref = useRef(null);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const io = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) { el.classList.add("is-in"); io.disconnect(); }
+    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+  return (
+    <Tag ref={ref} className={"reveal " + className} style={{ transitionDelay: delay + "ms" }}>
+      {children}
+    </Tag>
+  );
+}
+
+function useScrollSpy(ids) {
+  const [active, setActive] = useState("");
+  useEffect(() => {
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) setActive(e.target.id); });
+    }, { rootMargin: "-40% 0px -55% 0px" });
+    ids.forEach((id) => { const el = document.getElementById(id); if (el) obs.observe(el); });
+    return () => obs.disconnect();
+  }, []);
+  return active;
+}
+
+function SectionHead({ no, eyebrow, title, desc }) {
+  return (
+    <Reveal className="mb-10 sm:mb-14">
+      <p className="font-mono text-xs text-acc mb-3">[{no}] // {eyebrow}</p>
+      <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
+        <h2 className="font-disp text-2xl sm:text-3xl lg:text-4xl font-bold text-txt">{title}</h2>
+        {desc && <p className="text-mut text-sm max-w-md sm:text-right">{desc}</p>}
+      </div>
+      <div className="mt-5 h-px bg-line"></div>
+    </Reveal>
+  );
+}
+
+/* =====================================================================
+   4) SECTIONS
+   ===================================================================== */
+
+function Nav() {
+  const [open, setOpen] = useState(false);
+  const active = useScrollSpy(NAV_LINKS.map((l) => l.id));
+  return (
+    <header className="fixed top-0 inset-x-0 z-50 border-b border-line bg-ink/85 backdrop-blur">
+      <nav className="max-w-6xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between" aria-label="Main navigation">
+        <a href="#top" className="font-mono text-sm text-txt hover:text-acc transition-colors">
+          hassan@sec<span className="text-acc">:~$</span><span className="cursor ml-0.5" aria-hidden="true"></span>
+        </a>
+        <ul className="hidden md:flex items-center gap-1">
+          {NAV_LINKS.map((l) => (
+            <li key={l.id}>
+              <a href={"#" + l.id}
+                 aria-current={active === l.id ? "true" : undefined}
+                 className={"px-3 py-2 text-sm rounded-md transition-colors " + (active === l.id ? "text-acc" : "text-mut hover:text-txt")}>
+                {l.label}
+              </a>
+            </li>
+          ))}
+          <li className="ml-2">
+            <a href="#contact" className="font-mono text-xs border border-acc/40 text-acc px-3 py-2 rounded-md hover:bg-acc hover:text-ink transition-colors">hire_me</a>
+          </li>
+        </ul>
+        <button className="md:hidden text-txt p-2" onClick={() => setOpen(!open)}
+                aria-expanded={open} aria-label="Toggle navigation menu">
+          <Icon name={open ? "x" : "menu"} size={22} />
+        </button>
+      </nav>
+      {open && (
+        <ul className="md:hidden border-t border-line bg-ink px-5 py-3 flex flex-col">
+          {NAV_LINKS.map((l) => (
+            <li key={l.id}>
+              <a href={"#" + l.id} onClick={() => setOpen(false)}
+                 className="block py-2.5 text-mut hover:text-acc transition-colors">{l.label}</a>
+            </li>
+          ))}
+          <li className="pt-2">
+            <a href="#contact" onClick={() => setOpen(false)}
+               className="inline-block font-mono text-xs border border-acc/40 text-acc px-4 py-2.5 rounded-md">hire_me</a>
+          </li>
+        </ul>
+      )}
+    </header>
+  );
+}
+
+function Terminal() {
+  const [p, setP] = useState({ li: 0, ci: 0, done: false });
+  useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setP({ li: TERMINAL_SCRIPT.length - 1, ci: TERMINAL_SCRIPT[TERMINAL_SCRIPT.length - 1].text.length, done: true });
+      return;
+    }
+    let cancelled = false, t, li = 0, ci = 0;
+    const step = () => {
+      if (cancelled) return;
+      const line = TERMINAL_SCRIPT[li];
+      if (ci < line.text.length) {
+        ci++; setP({ li, ci, done: false });
+        t = setTimeout(step, line.cls === "cmd" ? 40 : 10);
+      } else if (li < TERMINAL_SCRIPT.length - 1) {
+        li++; ci = 0; setP({ li, ci, done: false });
+        t = setTimeout(step, 300);
+      } else {
+        setP({ li, ci, done: true });
+        t = setTimeout(() => {
+          if (cancelled) return;
+          li = 0; ci = 0; setP({ li, ci, done: false });
+          t = setTimeout(step, 400);
+        }, 5000);
+      }
+    };
+    t = setTimeout(step, 600);
+    return () => { cancelled = true; clearTimeout(t); };
+  }, []);
+
+  return (
+    <div className="rounded-lg border border-line bg-panel shadow-2xl shadow-black/40 overflow-hidden"
+         role="img" aria-label="Terminal animation showing my four-step penetration testing methodology: scope, recon, test, report.">
+      <div className="flex items-center gap-1.5 px-4 py-2.5 border-b border-line bg-ink/60">
+        <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]"></span>
+        <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]"></span>
+        <span className="w-2.5 h-2.5 rounded-full bg-[#27C93F]"></span>
+        <span className="ml-3 font-mono text-[11px] text-mut">hassan@sec: ~/methodology.sh</span>
+      </div>
+      <div className="p-4 sm:p-5 font-mono text-[12px] sm:text-[13px] leading-6 min-h-[15rem]">
+        {TERMINAL_SCRIPT.map((line, i) => {
+          const text = i < p.li ? line.text : (i === p.li ? line.text.slice(0, p.ci) : "");
+          const showCursor = (i === p.li && !p.done) || (p.done && i === TERMINAL_SCRIPT.length - 1);
+          const color = line.cls === "cmd" ? "text-txt" : (line.cls === "ok" ? "text-acc" : "text-mut");
+          return (
+            <div key={i} className={color}>
+              {text || "\u00A0"}{showCursor && <span className="cursor" aria-hidden="true"></span>}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+function Hero() {
+  return (
+    <section id="top" className="relative pt-28 sm:pt-32 pb-14 overflow-hidden">
+      <div className="absolute inset-0 grid-bg" aria-hidden="true"></div>
+      <div className="relative max-w-6xl mx-auto px-5 sm:px-8">
+        <div className="grid lg:grid-cols-[1.1fr_1fr] gap-10 lg:gap-14 items-center">
+          <div>
+            <Reveal>
+              <p className="font-mono text-xs sm:text-sm text-acc mb-4">// web penetration tester · bug bounty hunter</p>
+            </Reveal>
+            <Reveal delay={80}>
+              <h1 className="font-disp font-bold text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.05] text-txt">
+                Hassan Ashraf<br /><span className="text-acc">Abu-Algood</span>
+              </h1>
+            </Reveal>
+            <Reveal delay={160}>
+              <p className="mt-5 text-mut text-base sm:text-lg leading-relaxed max-w-xl">
+                Developer with a strong networking foundation, building a career in offensive security —
+                web application penetration testing, bug bounty, and security training delivery.
+              </p>
+            </Reveal>
+            <Reveal delay={220}>
+              <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 font-mono text-xs text-mut">
+                <span className="inline-flex items-center gap-1.5"><Icon name="mapPin" size={14} className="text-acc" /> Cairo, Egypt</span>
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-acc inline-block animate-pulse" aria-hidden="true"></span>
+                  Open to pentesting &amp; security training roles
+                </span>
+              </div>
+            </Reveal>
+            <Reveal delay={280}>
+              <div className="mt-7 flex flex-wrap gap-3">
+                <a href="#contact" className="inline-flex items-center gap-2 bg-acc text-ink font-semibold text-sm px-5 py-3 rounded-md hover:bg-white transition-colors">
+                  <Icon name="mail" size={16} /> Get in Touch
+                </a>
+                <a href="#labs" className="inline-flex items-center gap-2 border border-line text-txt text-sm px-5 py-3 rounded-md hover:border-acc hover:text-acc transition-colors">
+                  View Labs <Icon name="arrowRight" size={16} />
+                </a>
+              </div>
+            </Reveal>
+          </div>
+          <Reveal delay={200}><Terminal /></Reveal>
+        </div>
+
+        <Reveal delay={120}>
+          <ul className="mt-12 pt-6 border-t border-line flex flex-wrap gap-2.5" aria-label="Highlights">
+            {PROOF_CHIPS.map((c) => (
+              <li key={c.text} className="inline-flex items-center gap-2 border border-line bg-panel px-3.5 py-2 rounded-md font-mono text-xs text-mut hover:text-txt hover:border-acc/50 transition-colors">
+                <Icon name={c.icon} size={14} className="text-acc" /> {c.text}
+              </li>
+            ))}
+          </ul>
+        </Reveal>
+
+        <Reveal delay={160}>
+          <p className="mt-6 font-mono text-[11px] text-mut/70">
+            <span className="uppercase tracking-widest">Arsenal</span> — Burp Suite · Nmap · Wireshark · Nessus · Metasploit · OWASP ZAP · Feroxbuster · FFuf · Gobuster · Hydra · Netcat · SecLists
+          </p>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
+function About() {
+  return (
+    <section id="about" className="py-16 sm:py-24 border-t border-line/60">
+      <div className="max-w-6xl mx-auto px-5 sm:px-8">
+        <SectionHead no="01" eyebrow="about" title="Who I Am"
+          desc="Builder-turned-breaker. I learn how things are built, then how they break." />
+        <div className="grid lg:grid-cols-[1.5fr_1fr] gap-10">
+          <div className="space-y-4 text-mut leading-relaxed">
+            {ABOUT.map((par, i) => <Reveal key={i} delay={i * 80}><p>{par}</p></Reveal>)}
+            <Reveal delay={240}>
+              <p className="font-mono text-sm text-acc border-l-2 border-acc pl-4 py-1">
+                "Understand how things are built. Learn how they break. Report what you find."
+              </p>
+            </Reveal>
+          </div>
+          <Reveal delay={120}>
+            <div className="border border-line rounded-lg bg-panel p-6">
+              <h3 className="font-mono text-xs text-mut uppercase tracking-widest mb-5">Focus Areas</h3>
+              <ul className="space-y-4">
+                {FOCUS.map((f) => (
+                  <li key={f.title} className="flex items-start gap-3">
+                    <span className="mt-0.5 text-acc"><Icon name={f.icon} size={17} /></span>
+                    <div>
+                      <p className="text-txt text-sm font-medium">{f.title}</p>
+                      <p className="text-mut text-xs mt-0.5">{f.sub}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Reveal>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Experience() {
+  return (
+    <section id="experience" className="py-16 sm:py-24 border-t border-line/60">
+      <div className="max-w-6xl mx-auto px-5 sm:px-8">
+        <SectionHead no="02" eyebrow="experience" title="Where I Practice"
+          desc="Roles where I test, teach, and hunt." />
+        <div>
+          {EXPERIENCE.map((job, i) => (
+            <Reveal key={job.role + i} delay={i * 50}>
+              <article className="grid md:grid-cols-[180px_1fr] gap-2 md:gap-8 py-7 border-b border-line/60 group">
+                <p className="font-mono text-xs text-mut pt-1">{job.period}</p>
+                <div>
+                  <h3 className="font-disp text-lg sm:text-xl font-semibold text-txt group-hover:text-acc transition-colors">{job.role}</h3>
+                  <p className="font-mono text-xs text-acc mt-1 mb-3">{job.org}</p>
+                  <ul className="space-y-1.5">
+                    {job.points.map((pt, j) => (
+                      <li key={j} className="text-mut text-sm leading-relaxed flex gap-2.5">
+                        <span className="text-acc/70 font-mono text-xs mt-1" aria-hidden="true">▸</span>
+                        <span>{pt}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {job.tags.map((t) => (
+                      <span key={t} className="font-mono text-[11px] text-mut border border-line px-2 py-0.5 rounded">{t}</span>
+                    ))}
+                  </div>
+                </div>
+              </article>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Skills() {
+  return (
+    <section id="skills" className="py-16 sm:py-24 border-t border-line/60">
+      <div className="max-w-6xl mx-auto px-5 sm:px-8">
+        <SectionHead no="03" eyebrow="skills" title="Skills & Arsenal" desc="What I use, and how I use it." />
+        <div className="grid lg:grid-cols-[1.4fr_1fr] gap-10">
+          <div>
+            {SKILLS.map((s, i) => (
+              <Reveal key={s.title} delay={i * 50}>
+                <div className="flex gap-4 py-5 border-b border-line/60 group">
+                  <span className="shrink-0 w-10 h-10 rounded-md border border-line bg-panel flex items-center justify-center text-acc group-hover:border-acc/60 transition-colors">
+                    <Icon name={s.icon} size={18} />
+                  </span>
+                  <div className="min-w-0">
+                    <h3 className="text-txt font-medium">{s.title}</h3>
+                    <p className="text-mut text-sm mt-1">{s.desc}</p>
+                    <div className="mt-2.5 flex flex-wrap gap-1.5">
+                      {s.tags.map((t) => (
+                        <span key={t} className="font-mono text-[11px] text-acc/90 bg-acc/5 border border-acc/15 px-2 py-0.5 rounded">{t}</span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+          <div className="space-y-6">
+            {TOOL_GROUPS.map((g, i) => (
+              <Reveal key={g.group} delay={i * 70}>
+                <div className="border border-line rounded-lg bg-panel p-5">
+                  <h3 className="flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-mut mb-4">
+                    <Icon name={g.icon} size={14} className="text-acc" /> {g.group}
+                  </h3>
+                  <div className="flex flex-wrap gap-2">
+                    {g.items.map((t) => (
+                      <span key={t} className="font-mono text-xs text-txt border border-line bg-ink px-2.5 py-1.5 rounded hover:border-acc/60 hover:text-acc transition-colors">{t}</span>
+                    ))}
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Journey() {
+  return (
+    <section id="journey" className="py-16 sm:py-24 border-t border-line/60">
+      <div className="max-w-6xl mx-auto px-5 sm:px-8">
+        <SectionHead no="04" eyebrow="timeline" title="The Journey"
+          desc="From engineering foundations to offensive security — every step hands-on." />
+        <ol className="relative ml-3 sm:ml-4 border-l border-line space-y-10">
+          {TIMELINE.map((t, i) => (
+            <Reveal as="li" key={t.title} delay={i * 40} className="relative pl-8 sm:pl-10">
+              <span className="absolute -left-[13px] sm:-left-[15px] top-0 w-[26px] h-[26px] sm:w-[30px] sm:h-[30px] rounded-md bg-panel border border-line flex items-center justify-center text-acc">
+                <Icon name={t.icon} size={14} />
+              </span>
+              <p className="font-mono text-[11px] text-mut mb-1">STEP {String(i + 1).padStart(2, "0")}</p>
+              <h3 className="font-disp text-lg font-semibold text-txt">{t.title}</h3>
+              <p className="font-mono text-xs text-acc mt-1">{t.sub}</p>
+              <p className="text-mut text-sm mt-2 max-w-2xl leading-relaxed">{t.desc}</p>
+            </Reveal>
+          ))}
+        </ol>
+      </div>
+    </section>
+  );
+}
+
+function Labs() {
+  return (
+    <section id="labs" className="py-16 sm:py-24 border-t border-line/60">
+      <div className="max-w-6xl mx-auto px-5 sm:px-8">
+        <SectionHead no="05" eyebrow="labs" title="Labs & Write-ups"
+          desc="Hands-on practice, documented. Publish slots are ready — write-ups coming soon." />
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {LABS.map((lab, i) => (
+            <Reveal key={i} delay={i * 70} className="h-full">
+              <article className="h-full border border-dashed border-line rounded-lg bg-panel/50 p-6 flex flex-col hover:border-acc/40 transition-colors">
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-mut"><Icon name="fileText" size={20} /></span>
+                  <span className={"font-mono text-[10px] uppercase tracking-widest px-2 py-0.5 rounded border " + (lab.link ? "text-acc border-acc/40" : "text-mut border-line")}>
+                    {lab.link ? "Published" : "Coming soon"}
+                  </span>
+                </div>
+                <h3 className="text-txt font-medium">{lab.title}</h3>
+                <p className="text-mut text-sm mt-2 leading-relaxed flex-1">{lab.description}</p>
+                <div className="mt-4 flex flex-wrap gap-1.5">
+                  {lab.tags.map((t) => (
+                    <span key={t} className="font-mono text-[11px] text-mut border border-line px-2 py-0.5 rounded">{t}</span>
+                  ))}
+                </div>
+                {lab.link && (
+                  <a href={lab.link} target="_blank" rel="noopener noreferrer"
+                     className="mt-4 inline-flex items-center gap-1.5 text-acc text-sm hover:underline">
+                    Read write-up <Icon name="externalLink" size={14} />
+                  </a>
+                )}
+              </article>
+            </Reveal>
+          ))}
+        </div>
+        <Reveal delay={200}>
+          <p className="mt-8 font-mono text-xs text-mut">
+            <span className="text-acc">$</span> How to publish: open <span className="text-txt">index.html</span> → find the <span className="text-txt">LABS</span> array → replace a placeholder with your title, description, tags, and a GitHub/PDF link.
+          </p>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
+function Credentials() {
+  return (
+    <section id="credentials" className="py-16 sm:py-24 border-t border-line/60">
+      <div className="max-w-6xl mx-auto px-5 sm:px-8">
+        <SectionHead no="06" eyebrow="credentials" title="Certifications & Achievements"
+          desc="Completed certifications only — verified and documented." />
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {CERTS_FEATURED.map((c, i) => (
+            <Reveal key={c.title} delay={i * 60} className="h-full">
+              <div className="h-full border border-line rounded-lg bg-panel p-5 hover:border-acc/50 hover:-translate-y-0.5 transition-all">
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-acc"><Icon name={c.icon} size={20} /></span>
+                  <span className="inline-flex items-center gap-1 font-mono text-[10px] uppercase tracking-wider text-acc">
+                    <Icon name="check" size={12} /> Completed
+                  </span>
+                </div>
+                <h3 className="text-txt font-medium text-sm">{c.title}</h3>
+                <p className="font-mono text-[11px] text-mut mt-1.5">{c.issuer}</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+
+        <Reveal delay={100}>
+          <div className="mt-8 border border-line rounded-lg bg-panel/50 p-6">
+            <h3 className="font-mono text-xs uppercase tracking-widest text-mut mb-4">Also Completed</h3>
+            <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-3">
+              {CERTS_MORE.map((c) => (
+                <li key={c} className="flex items-start gap-2.5 text-sm text-mut">
+                  <Icon name="check" size={15} className="text-acc mt-0.5 shrink-0" /> {c}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </Reveal>
+
+        <div className="mt-10 grid md:grid-cols-2 gap-4">
+          {ACHIEVEMENTS.map((a, i) => (
+            <Reveal key={a.title} delay={i * 70} className="h-full">
+              <div className="h-full border border-line rounded-lg bg-panel p-6 flex gap-4 items-start hover:border-acc/50 transition-colors">
+                <span className="w-11 h-11 shrink-0 rounded-md bg-acc/10 border border-acc/20 flex items-center justify-center text-acc">
+                  <Icon name={a.icon} size={20} />
+                </span>
+                <div>
+                  <h3 className="text-txt font-semibold">{a.title}</h3>
+                  <p className="font-mono text-[11px] text-mut mt-0.5">{a.team}</p>
+                  <p className="text-acc font-mono text-sm mt-2">{a.result}</p>
+                  <p className="text-mut text-sm mt-1.5 leading-relaxed">{a.desc}</p>
+                </div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+
+        <Reveal delay={120}>
+          <div className="mt-10">
+            <h3 className="font-mono text-xs uppercase tracking-widest text-mut mb-4 flex items-center gap-2">
+              <Icon name="bookOpen" size={14} className="text-acc" /> Study Library
+            </h3>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {LIBRARY.map((b) => (
+                <div key={b.title} className="border border-line rounded-lg bg-panel/50 p-5 flex gap-3">
+                  <Icon name="bookOpen" size={16} className="text-acc mt-1 shrink-0" />
+                  <div>
+                    <h4 className="text-txt text-sm font-medium">{b.title}</h4>
+                    <p className="text-mut text-xs mt-1 leading-relaxed">{b.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
+function Contact() {
+  const [copied, setCopied] = useState(false);
+  const [toast, setToast] = useState("");
+  const showToast = (m) => { setToast(m); setTimeout(() => setToast(""), 3500); };
+
+  const copyEmail = () => {
+    const done = () => { setCopied(true); setTimeout(() => setCopied(false), 1600); };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(PROFILE.email).then(done).catch(() => {});
+    } else {
+      const ta = document.createElement("textarea");
+      ta.value = PROFILE.email; document.body.appendChild(ta); ta.select();
+      try { document.execCommand("copy"); done(); } catch (e) {}
+      document.body.removeChild(ta);
+    }
+  };
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    const f = e.target;
+    const fd = new FormData(f);
+    const name = (fd.get("name") || "").trim();
+    const email = (fd.get("email") || "").trim();
+    const msg = (fd.get("message") || "").trim();
+    if (!name || !email || !msg) return;
+    if (FORM_ENDPOINT) {
+      fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, message: msg }),
+      })
+        .then(() => { f.reset(); showToast("Message sent — I'll get back to you soon."); })
+        .catch(() => showToast("Something went wrong — please email me directly."));
+      return;
+    }
+    const subject = encodeURIComponent("Portfolio contact — " + name);
+    const body = encodeURIComponent(msg + "\n\n— " + name + " (" + email + ")");
+    window.location.href = "mailto:" + PROFILE.email + "?subject=" + subject + "&body=" + body;
+  };
+
+  const rowCls = "flex items-center gap-3 border border-line rounded-lg bg-panel px-4 py-3.5 hover:border-acc/50 transition-colors";
+
+  return (
+    <section id="contact" className="py-16 sm:py-24 border-t border-line/60">
+      <div className="max-w-6xl mx-auto px-5 sm:px-8">
+        <SectionHead no="07" eyebrow="contact" title="Let's Connect"
+          desc="Recruiters, teams, and fellow hackers — my inbox is open." />
+        <div className="grid lg:grid-cols-[1fr_1.1fr] gap-10">
+          <div>
+            <Reveal>
+              <p className="text-mut leading-relaxed">
+                Interested in penetration testing, bug bounty, or security training? Feel free to connect with me.
+              </p>
+            </Reveal>
+            <ul className="mt-8 space-y-3">
+              <Reveal as="li" delay={60}>
+                <div className="flex items-center justify-between gap-3 border border-line rounded-lg bg-panel px-4 py-3.5 hover:border-acc/50 transition-colors">
+                  <a href={"mailto:" + PROFILE.email} className="flex items-center gap-3 min-w-0 group">
+                    <Icon name="mail" size={17} className="text-acc shrink-0" />
+                    <span className="min-w-0">
+                      <span className="block font-mono text-[10px] uppercase tracking-widest text-mut">Email</span>
+                      <span className="block text-sm text-txt truncate group-hover:text-acc transition-colors">{PROFILE.email}</span>
+                    </span>
+                  </a>
+                  <button onClick={copyEmail}
+                          className="font-mono text-[11px] text-mut hover:text-acc border border-line px-2.5 py-1 rounded shrink-0 transition-colors"
+                          aria-label="Copy email address">
+                    {copied ? "Copied" : "Copy"}
+                  </button>
+                </div>
+              </Reveal>
+              <Reveal as="li" delay={120}>
+                <a href={PROFILE.linkedin} target="_blank" rel="noopener noreferrer" className={rowCls}>
+                  <Icon name="linkedin" size={17} className="text-acc shrink-0" />
+                  <span>
+                    <span className="block font-mono text-[10px] uppercase tracking-widest text-mut">LinkedIn</span>
+                    <span className="block text-sm text-txt">in/hassan-ashraf-abu-algood</span>
+                  </span>
+                  <Icon name="externalLink" size={14} className="text-mut ml-auto" />
+                </a>
+              </Reveal>
+              <Reveal as="li" delay={180}>
+                {PROFILE.github ? (
+                  <a href={PROFILE.github} target="_blank" rel="noopener noreferrer" className={rowCls}>
+                    <Icon name="github" size={17} className="text-acc shrink-0" />
+                    <span>
+                      <span className="block font-mono text-[10px] uppercase tracking-widest text-mut">GitHub</span>
+                      <span className="block text-sm text-txt">{PROFILE.github.replace("https://", "")}</span>
+                    </span>
+                    <Icon name="externalLink" size={14} className="text-mut ml-auto" />
+                  </a>
+                ) : (
+                  <div className="flex items-center gap-3 border border-dashed border-line rounded-lg px-4 py-3.5 opacity-70">
+                    <Icon name="github" size={17} className="text-mut shrink-0" />
+                    <span>
+                      <span className="block font-mono text-[10px] uppercase tracking-widest text-mut">GitHub</span>
+                      <span className="block text-sm text-mut">Link coming soon</span>
+                    </span>
+                  </div>
+                )}
+              </Reveal>
+              <Reveal as="li" delay={240}>
+                <a href={PROFILE.phoneHref} className={rowCls}>
+                  <Icon name="phone" size={17} className="text-acc shrink-0" />
+                  <span>
+                    <span className="block font-mono text-[10px] uppercase tracking-widest text-mut">Phone</span>
+                    <span className="block text-sm text-txt">{PROFILE.phone}</span>
+                  </span>
+                </a>
+              </Reveal>
+            </ul>
+          </div>
+
+          <Reveal delay={140}>
+            <form onSubmit={onSubmit} className="border border-line rounded-lg bg-panel p-6 sm:p-7">
+              <h3 className="font-disp text-lg font-semibold text-txt mb-1">Send a message</h3>
+              <p className="text-mut text-xs mb-5 font-mono">// opens your email client, pre-filled</p>
+              <div className="space-y-4">
+                <div>
+                  <label htmlFor="cf-name" className="block font-mono text-[11px] uppercase tracking-widest text-mut mb-1.5">Name</label>
+                  <input id="cf-name" name="name" type="text" required
+                         className="w-full bg-ink border border-line rounded-md px-3.5 py-2.5 text-sm text-txt placeholder:text-mut/50 focus:border-acc focus:outline-none"
+                         placeholder="Your name" />
+                </div>
+                <div>
+                  <label htmlFor="cf-email" className="block font-mono text-[11px] uppercase tracking-widest text-mut mb-1.5">Email</label>
+                  <input id="cf-email" name="email" type="email" required
+                         className="w-full bg-ink border border-line rounded-md px-3.5 py-2.5 text-sm text-txt placeholder:text-mut/50 focus:border-acc focus:outline-none"
+                         placeholder="you@example.com" />
+                </div>
+                <div>
+                  <label htmlFor="cf-msg" className="block font-mono text-[11px] uppercase tracking-widest text-mut mb-1.5">Message</label>
+                  <textarea id="cf-msg" name="message" rows="5" required
+                            className="w-full bg-ink border border-line rounded-md px-3.5 py-2.5 text-sm text-txt placeholder:text-mut/50 focus:border-acc focus:outline-none resize-y"
+                            placeholder="What would you like to discuss?"></textarea>
+                </div>
+                <button type="submit"
+                        className="w-full inline-flex items-center justify-center gap-2 bg-acc text-ink font-semibold text-sm px-5 py-3 rounded-md hover:bg-white transition-colors">
+                  <Icon name="send" size={15} /> Send Message
+                </button>
+              </div>
+            </form>
+          </Reveal>
+        </div>
+      </div>
+
+      {toast && (
+        <div role="status" className="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 bg-panel border border-acc/40 text-txt text-sm px-4 py-2.5 rounded-md font-mono shadow-xl shadow-black/40">
+          {toast}
+        </div>
+      )}
+    </section>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="border-t border-line py-8">
+      <div className="max-w-6xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p className="font-mono text-xs text-mut">
+          © {new Date().getFullYear()} Hassan Ashraf Abu-Algood <span className="text-acc">// EOF</span>
+        </p>
+        <a href="#top" className="inline-flex items-center gap-1.5 font-mono text-xs text-mut hover:text-acc transition-colors">
+          Back to top <Icon name="arrowUp" size={13} />
+        </a>
+      </div>
+    </footer>
+  );
+}
+
+/* =====================================================================
+   5) APP
+   ===================================================================== */
+function App() {
+  return (
+    <React.Fragment>
+      <a href="#main"
+         className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-acc focus:text-ink focus:px-3 focus:py-2 focus:rounded-md font-mono text-sm">
+        Skip to content
+      </a>
+      <Nav />
+      <main id="main">
+        <Hero />
+        <About />
+        <Experience />
+        <Skills />
+        <Journey />
+        <Labs />
+        <Credentials />
+        <Contact />
+      </main>
+      <Footer />
+    </React.Fragment>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>
